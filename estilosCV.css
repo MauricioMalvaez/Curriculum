@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial';
+    height: 150vh;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+header{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #373b44, #4286f4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #373b44, #4286f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 60px;
+}
+
+header.textos-header{
+display: flex;
+height: 200px;
+width: 100%;
+text-align: left;
+justify-content: center;
+text-align: right;
+}
+.textos-header.h1{
+    font-size: 50px;
+    
+}
+.textos-header.h2{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.profile-image{
+    position: relative;
+    width: 50%;
+    height: 2%;
+    margin-left: auto; 
+    margin-right: 150px;
+    margin-bottom: 20px;
+    margin-top: -150px;  
+}
+.titulo{
+    color: darkgreen;
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.about-texto{
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 40px;
+}
+
+
+.contenedor-imagenes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.contenedor-imagenes figure{
+    position: relative;
+    height: 300px;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translateX(-300px) translateY(-200px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+.contenedor-imagenes figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+
+}
+
+.contenedor-imagenes figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.4);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor-imagenes figure:hover>.capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor-imagenes figure:hover>.capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+
+.contenedor-imagenes figure .capa h3{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.contenedor-imagenes figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.contenedor-imagenes figure:hover> img{
+    transform: scale(1.3);
+}
+
+
+
+.contenedor-udg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor-udg figure{
+    position: relative;
+    height: 300px;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translateX(250px) translateY(-932px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+.contenedor-udg figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor-udg figure .capa2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.8);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor-udg figure:hover>.capa2{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor-udg figure:hover>.capa2  h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+
+.contenedor-udg figure .capa2 h3{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    
+}
+
+.contenedor-udg figure .capa2 p{
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    
+}
+
+.contenedor-udg figure:hover> img{
+    transform: scale(1.3);
+}
+
+h1{
+    font-weight: 100;
+    font-size: 100px;
+}
+h2{
+    font-weight: 100;
+    font-size: 50px;
+}
+
+h3{
+    font-weight: 100;
+    text-align: center;
+    font-size: 45px;
+}
+
+p{
+    font-size: 100;
+    font-size: 40px;
+    text-align:justify;
+    
+    color: #71B280;
+    
+}
+
+img{
+    width: 40%;
+    align-self: center;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    
+}
+ 
+
+
+.contenedor-titulos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#img-dragger{
+    width: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: 170px;
+}
+
+#img-electro{
+    width: 100%;
+    padding: 20%;
+    transform: translateX(270px) translateY(-270px);
+}
+
+
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display:flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797  ;
+}
+
+.tskills{
+    background: #f2f2f2;
+}
+
+.experiencia{
+    background: #f2f2f2;
+}
+
+.tabla{
+width: 100%;
+align-content: center;
+}
+
+.contenedor-skill{
+padding-bottom: 100px;
+}
+
+.social-media{
+width: 10%;
+display: flex;
+justify-content: flex-start;
+
+}
+
+.social-media-icon{
+display: inline-block;
+margin-left: 20px;
+width: 60px;
+height:60px;
+border: 1px solid #fff;
+border-radius: 100%;
+text-align: center;
+color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #764ba2;
+    cursor: pointer;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+/* Mejora que compartió Liliana sobre About Me
+.about.texto{
+    width: 80%;
+    height: 330px;
+    background-color: rgb(247, 224, 227);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgb(68, 67, 67);
+    display: flex;
+    margin: -7% auto 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+*/
